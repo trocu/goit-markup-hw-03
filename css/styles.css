@@ -144,9 +144,14 @@ ul {
 }
 .main-txt-wrapper ul {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin-bottom: 94px;
+}
+.main-txt-wrapper li {
+  min-width: 270px;
+  flex-basis: calc((100% - 90px) / 4);
 }
 .main-txt h3 {
   font-weight: 700;
@@ -163,8 +168,12 @@ ul {
 }
 .main-foto-wrapper ul {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
+}
+.main-foto-wrapper li {
+  flex-basis: calc((100% - 60px) / 3);
 }
 .section-title {
   margin-top: 0;
@@ -177,8 +186,12 @@ ul {
 }
 .about-us-wrapper ul {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
+}
+.about-us-wrapper li {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .about-us {
   background-color: var(--light-grey-item);
@@ -203,7 +216,6 @@ ul {
   color: var(--light-txt-color);
 }
 .about-us-box li {
-  width: 270px;
   padding-bottom: 30px;
   background: var(--white-item);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -285,18 +297,17 @@ Specific portfolio styles below
 .portfolio-box-wrap ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 30px;
+  justify-content: center;
 }
 .portfolio-box li {
-  width: 370px;
+  flex-basis: calc((100% - 60px) / 3);
   background: var(--white-item);
 }
 .portfolio-box img {
   display: block;
 }
 .portfolio-box-desc {
-  border-top: 1px solid;
   border-left: 1px solid;
   border-right: 1px solid;
   border-bottom: 1px solid;
