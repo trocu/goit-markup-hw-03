@@ -226,8 +226,7 @@ ul {
   background: var(--grey-bkg);
 }
 .footer-box p {
-  margin-top: 20px;
-  margin-bottom: 9px;
+  margin: 0;
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
@@ -239,6 +238,8 @@ ul {
   padding-bottom: 60px;
 }
 .logo-footer {
+  display: block;
+  margin-bottom: 20px;
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
